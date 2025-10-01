@@ -4,6 +4,14 @@ const yuzler = [
     "images/yuzler/yuz_2.png", 
     // Diğer yüz resimlerini buraya ekle
 ];
+const kiyafetler = [
+    "images/kiyafetler/bos.png", // Varsayılan kıyafet için boş resim
+    "images/kiyafetler/kiyafet_1.png",
+    "images/kiyafetler/kiyafet_2.png",
+    "images/kiyafetler/kiyafet_1.png", 
+    "images/kiyafetler/kiyafet_1.png"
+    // Diğer kıyafetlerini buraya ekle
+];
 
 const saclar = [
     "images/saclar/sac_1.png",
@@ -32,6 +40,7 @@ const sakallar = [
 
 // HTML elementlerini kod içinde kullanmak için seçiyoruz
 const yuzImg = document.getElementById("yuz");
+const kiyafetImg = document.getElementById("kiyafet");
 const sacImg = document.getElementById("sac");
 const gozlukImg = document.getElementById("gozluk");
 const sakalImg = document.getElementById("sakal");
@@ -47,6 +56,8 @@ function rastgeleSec(dizi) {
 function yeniKarakterOlustur() {
     // Yüz resmini rastgele bir taneyle değiştir
     yuzImg.src = rastgeleSec(yuzler);
+
+    kiyafetImg.src = rastgeleSec(kiyafetler);
 
     // Saç resmini rastgele bir taneyle değiştir
     sacImg.src = rastgeleSec(saclar);

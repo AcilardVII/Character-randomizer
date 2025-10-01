@@ -24,9 +24,10 @@ body {
 
 /* Katman sırasını belirle (z-index: yüksek sayı üstte görünür) */
 #yuz { z-index: 1; }
-#sakal { z-index: 2; }
-#sac { z-index: 3;top: -5px; }
-#gozluk { z-index: 4; }
+#kiyafet { z-index: 2; } 
+#sakal { z-index: 3; }
+#sac { z-index: 4;top: -5px; }
+#gozluk { z-index: 5; }
 
 #olustur-butonu {
     margin-top: 20px;
