@@ -8,8 +8,8 @@ const kiyafetler = [
     "images/kiyafetler/bos.png", // Varsayılan kıyafet için boş resim
     "images/kiyafetler/kiyafet_1.png",
     "images/kiyafetler/kiyafet_2.png",
-    "images/kiyafetler/kiyafet_1.png", 
-    "images/kiyafetler/kiyafet_1.png"
+    "images/kiyafetler/kiyafet_3.png", 
+    "images/kiyafetler/kiyafet_4.png"
     // Diğer kıyafetlerini buraya ekle
 ];
 

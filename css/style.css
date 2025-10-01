@@ -34,4 +34,25 @@ body {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
+
+}
+@media (max-width: 600px) {
+    body {
+        /* Mobil cihazlarda daha az boşluk bırakır */
+        justify-content: flex-start;
+        padding-top: 20px;
+    }
+
+    .karakter-alani {
+        /* Karakterin boyutunu mobil ekran için ayarla */
+        width: 250px;
+        height: 250px;
+    }
+    
+    #olustur-butonu {
+        /* Mobil butonun boyutu ve boşluğu */
+        width: 80%;
+        padding: 15px;
+        font-size: 18px;
+    }
 }
