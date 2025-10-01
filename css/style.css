@@ -10,8 +10,13 @@ body {
 
 .karakter-alani {
     position: relative;
-    width: 300px; /* Karakterin genişliği */
-    height: 300px; /* Karakterin yüksekliği */
+    
+    /* Bu kısmı güncelliyoruz */
+    width: 80vw; /* Ekran genişliğinin %80'ini kapla */
+    max-width: 400px; /* Maksimum genişlik 400 piksel olsun */
+    height: 80vw;
+    max-height: 400px;
+    margin-bottom: 20px;
 }
 
 .karakter-alani img {
@@ -30,7 +35,7 @@ body {
 #gozluk { z-index: 5; }
 
 #olustur-butonu {
-    margin-top: 20px;
+      margin-top: 20px;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
@@ -38,19 +43,17 @@ body {
 }
 @media (max-width: 600px) {
     body {
-        /* Mobil cihazlarda daha az boşluk bırakır */
         justify-content: flex-start;
         padding-top: 20px;
     }
 
+    /* Mobil için daha fazla yer kaplasın */
     .karakter-alani {
-        /* Karakterin boyutunu mobil ekran için ayarla */
-        width: 250px;
-        height: 250px;
+        width: 90vw;
+        height: 90vw;
     }
     
     #olustur-butonu {
-        /* Mobil butonun boyutu ve boşluğu */
         width: 80%;
         padding: 15px;
         font-size: 18px;
