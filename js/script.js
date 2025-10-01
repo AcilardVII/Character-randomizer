@@ -1,4 +1,4 @@
-// Resim dosyalarının yollarını tutan diziler
+    // Resim dosyalarının yollarını tutan diziler
 const yuzler = [
     "images/yuzler/yuz_1.png",
     "images/yuzler/yuz_2.png", 
@@ -17,7 +17,7 @@ const saclar = [
 
 const gozlukler = [
     "images/gozlukler/gozluk_1.png",
-    "images/gozlukler/gozluk_2.png",
+    "images/gozlukler/gozluk_2.png"
     
     // Diğer gözlük resimlerini buraya ekle
 ];
@@ -56,14 +56,16 @@ function yeniKarakterOlustur() {
     if (Math.random() < 0.5) {
         gozlukImg.src = rastgeleSec(gozlukler);
     } else {
-        gozlukImg.src = ""; // Gözlük takmazsa boş resim göster
+        gozlukImg.src = ""; // Resmin kaynağını temizle (güvenlik için)
+        gozlukImg.style.visibility = "hidden";
     }
     
     // %50 olasılıkla sakal takar
     if (Math.random() < 0.5) {
         sakalImg.src = rastgeleSec(sakallar);
     } else {
-        sakalImg.src = ""; // Sakal takmazsa boş resim göster
+        akalImg.src = "";
+        sakalImg.style.visibility = "hidden";
     }
 }
 
