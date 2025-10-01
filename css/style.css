@@ -1,0 +1,36 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+.karakter-alani {
+    position: relative;
+    width: 300px; /* Karakterin genişliği */
+    height: 300px; /* Karakterin yüksekliği */
+}
+
+.karakter-alani img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+/* Katman sırasını belirle (z-index: yüksek sayı üstte görünür) */
+#yuz { z-index: 1; }
+#sakal { z-index: 2; }
+#sac { z-index: 3;top: -5px; }
+#gozluk { z-index: 4; }
+
+#olustur-butonu {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
