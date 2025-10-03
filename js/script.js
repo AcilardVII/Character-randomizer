@@ -23,12 +23,7 @@ const saclar = [
     // Diğer saç resimlerini buraya ekle
 ];
 
-const gozlukler = [
-    "images/gozlukler/gozluk_1.png",
-    "images/gozlukler/gozluk_2.png"
-    
-    // Diğer gözlük resimlerini buraya ekle
-];
+
 
 const sakallar = [
     "images/sakallar/sakal_1.png",
@@ -42,7 +37,6 @@ const sakallar = [
 const yuzImg = document.getElementById("yuz");
 const kiyafetImg = document.getElementById("kiyafet");
 const sacImg = document.getElementById("sac");
-const gozlukImg = document.getElementById("gozluk");
 const sakalImg = document.getElementById("sakal");
 const olusturButonu = document.getElementById("olustur-butonu");
 
@@ -52,9 +46,9 @@ function rastgeleSec(dizi) {
     return dizi[rastgeleIndex];
 }
 
-// Karakteri oluşturan ana fonksiyon
+
 function yeniKarakterOlustur() {
-    // Yüz resmini rastgele bir taneyle değiştir
+    
     yuzImg.src = rastgeleSec(yuzler);
 
     kiyafetImg.src = rastgeleSec(kiyafetler);
@@ -62,14 +56,7 @@ function yeniKarakterOlustur() {
     // Saç resmini rastgele bir taneyle değiştir
     sacImg.src = rastgeleSec(saclar);
 
-    // Gözlük ve sakal için isteğe bağlılık ekle
-    // %50 olasılıkla gözlük takar
-    if (Math.random() < 0.5) {
-        gozlukImg.src = rastgeleSec(gozlukler);
-    } else {
-        gozlukImg.src = ""; // Resmin kaynağını temizle (güvenlik için)
-        gozlukImg.style.visibility = "hidden";
-    }
+    
     
     // %50 olasılıkla sakal takar
     if (Math.random() < 0.5) {
@@ -80,7 +67,7 @@ function yeniKarakterOlustur() {
     }
 }
 
-// Butona tıklandığında yeniKarakterOlustur fonksiyonunu çalıştır
+
 olusturButonu.addEventListener("click", yeniKarakterOlustur);
 
 // Sayfa ilk yüklendiğinde bir karakter oluştur
